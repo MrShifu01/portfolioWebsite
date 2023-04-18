@@ -1,3 +1,78 @@
+
+/*Import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/*setting website root colors*/
+:root {
+    --white: #e7ecef;
+    --orange: #d17a22;
+    --grey: #272932;
+}
+
+/*Body Styling*/
+body {
+    background-image: url('/background.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Navbar Styling*/
+.navbar {
+    height: 100px;
+}
+
 .navbar-nav {
-    text-align: right;
+    margin-right: 4rem;
+}
+
+.nav-item {
+    color: #e7ecef;
+    padding-top: 10px;
+}
+
+.nav-link.active {
+    color: #d17a22 !important;
+}
+
+/*Header Styling*/
+
+#row1 {
+    padding-top: 200px;
+    padding-left: 130px;
+}
+
+#main-heading {
+    font-family: "Roboto", sans-serif;
+    color: #e7ecef;
+    font-size: 500%;
+}
+
+.html-styling {
+    color: #d17a22;
+    font-weight:100;
+    font-size: 250%;
+    font-style: italic;
+}
+
+/*Sub-heading styling*/
+#sub-heading {
+    color: #e7ecef;
+    padding-left: 130px;
+    font-size: 180%;
+    font-weight: 400;
+}
+
+/*zen image styling*/
+#zen-circle {
+    transform: translateY(-130px);
+    position: absolute;
+    left: 620px;
+}
+
+/*Styling the paragraph*/
+.home-paragraph {
+    color: #e7ecef;
+    padding-left: 130px;
 }

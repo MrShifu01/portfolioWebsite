@@ -10,14 +10,17 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light" style="background-color: ;">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #272932;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img id="header-img" src="Web Craft (1).svg" width="200px" height="200px">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Projects</a>
                     </li>
@@ -27,17 +30,45 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <button class="resume-button">Resume</button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!--Header-->
+    <header id="header">
+        <div class="container">
+            <!--Row 1 with the main heading-->
+            <div class="row" id="row1">
+                <div class="col-md-12">
+                    <div class="d-flex align-items-center">
+                        <h5 class="html-styling">&lt;h1&gt;</h5>
+                        <h1 id="main-heading">Web Craft</h1>
+                        <h5 class="html-styling">&lt;/h1&gt;</h5>
+                    </div>
+                </div>
+            </div>
+            <!--Row 2 with the Subheading-->
+            <div class="row" id="row2">
+                <div class="col-md">
+                    <div class="d-flex align-items-center">
+                        <h2 id="sub-heading">Full Stack Web Development | Data Science | Design</h2>
+                    </div>
+                </div>
+
+            </div>
+            <!--Row 3 with the paragrpaph-->
+            <div class="row" id="row3">
+                <div class="col-md">
+                    <p class="home-paragraph">const <span style="color:#d17a22;">developer</span> = &#123;</p>
+                    <p class="home-paragraph">&nbsp;&nbsp;&nbsp;&nbsp;name: "Christian Stander",</p>
+                    <p class="home-paragraph">&nbsp;&nbsp;&nbsp;&nbsp;country: "South Africa",</p>
+                    <p class="home-paragraph">&nbsp;&nbsp;&nbsp;&nbsp;languages: ['html', 'css', 'javascript', 'python', 'R', 'matlab', 'c++'],</p>
+                    <p class="home-paragraph">&nbsp;&nbsp;&nbsp;&nbsp;frameworks: ['react.js', 'django', 'node.js', 'tailwind', 'bootstrap', 'next.js', 'pandas', 'pytorch', 'keras'],</p>
+                    <p class="home-paragraph">&nbsp;&nbsp;&nbsp;&nbsp;Design: ['figma', 'photoshop', 'canva'],</p>
+                    <p class="home-paragraph">&#125;</p>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
