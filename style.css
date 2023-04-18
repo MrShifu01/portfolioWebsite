@@ -51,6 +51,7 @@ body {
 
 .html-styling {
     color: #d17a22;
+    opacity: 0.4b;
     font-weight:100;
     font-size: 250%;
     font-style: italic;
@@ -62,6 +63,7 @@ body {
     padding-left: 130px;
     font-size: 180%;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 /*zen image styling*/
@@ -75,4 +77,21 @@ body {
 .home-paragraph {
     color: #e7ecef;
     padding-left: 130px;
+    margin-bottom: 0.3em;
+}
+
+/*Styling the portfolio button*/
+.btn {
+    margin-left: 128px;
+    margin-top: 30px;
+}
+
+.btn.btn-outline-dark {
+    background-color:#e7ecef;
+    border-color: var(--orange);
+}
+
+.btn.btn-outline-dark:hover {
+    background-color: #272932;
+    border-color: #e7ecef;
 }
