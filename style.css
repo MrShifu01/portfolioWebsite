@@ -10,13 +10,21 @@
 }
 
 /*Body Styling*/
-body {
+#index-body {
     background-image: url('/background.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+#about-body, #portfolio-body, #resume-body {
+    background-image: url('/background2.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 
 /*Navbar Styling*/
 .navbar {
