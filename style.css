@@ -17,7 +17,7 @@
     background-attachment: fixed;
     background-size: cover;
 }
-#about-body, #portfolio-body, #resume-body {
+#about-body, #portfolio-body, #resume-body, #widget-body {
     background-image: url('/background2.svg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 }
 
 .navbar-brand {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .nav-item {
@@ -51,7 +51,7 @@
 /*Header Styling*/
 
 #row1 {
-    padding-top: 200px;
+    padding-top: 65px;
     padding-left: 35px;
 }
 
@@ -107,3 +107,35 @@
     background-color: #272932;
     border-color: #e7ecef;
 }
+
+@media (max-width: 992px) {
+    .navbar {
+        min-height: 110px; 
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        margin-top: 1px;
+    }
+
+    .navbar-brand img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    #index-body {
+        background-image: url('/background2.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+}
+
+
+
