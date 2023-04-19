@@ -17,13 +17,11 @@
     background-attachment: fixed;
     background-size: cover;
 }
-#about-body, #portfolio-body, #resume-body, #widget-body {
-    background-image: url('/background2.svg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+
+#portfolio-body, #about-body, #resume-body, #widget-body {
+    background-color: #272932 !important;
 }
+
 
 
 /*Navbar Styling*/
@@ -55,7 +53,23 @@
     padding-left: 35px;
 }
 
+#about-row1 {
+    padding-top: 50px;
+    padding-left: 14px;
+}
+
+#portfolio-row1 {
+    padding-top: 50px;
+    padding-left: 14px;
+}
+
 #main-heading {
+    font-family: "Roboto", sans-serif;
+    color: #e7ecef;
+    font-size: 500%;
+}
+
+#about-heading {
     font-family: "Roboto", sans-serif;
     color: #e7ecef;
     font-size: 500%;
@@ -78,24 +92,32 @@
     margin-bottom: 20px;
 }
 
-/*zen image styling*/
-#zen-circle {
-    transform: translateY(-130px);
-    position: absolute;
-    left: 620px;
-}
-
 /*Styling the paragraph*/
 .home-paragraph {
+    font-size: large;
     color: #e7ecef;
     padding-left: 130px;
+    margin-bottom: 0.3em;
+
+}
+
+.about-paragraph {
+    font-size: medium;
+    color: #e7ecef;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-bottom: 0.3em;
 }
 
 /*Styling the portfolio button*/
-.btn {
+.btn.home {
     margin-left: 128px;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.btn.about {
+    margin-left: 100px;
+    margin-top: 10px;
 }
 
 .btn.btn-outline-dark {
@@ -107,6 +129,25 @@
     background-color: #272932;
     border-color: #e7ecef;
 }
+
+/*Images styling*/
+.portfolio-images-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 150px;
+}
+
+.finance-app > * {
+    border-radius: 5px;
+}
+.remote-app > * {
+    border-radius: 5px;
+}
+.interior-app > * {
+    border-radius: 5px;
+}
+
 
 @media (max-width: 992px) {
     .navbar {
