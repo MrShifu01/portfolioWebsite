@@ -1,30 +1,38 @@
+/* ----------------------- */
+/* --- Global Settings --- */
+/* ----------------------- */
 
-/*Import google fonts*/
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
-/*setting website root colors*/
+/* Set website root colors */
 :root {
     --white: #e7ecef;
     --orange: #d17a22;
     --grey: #272932;
 }
 
-/*Body Styling*/
+/* --------------------- */
+/* --- Page Settings --- */
+/* --------------------- */
+
+/* Body Styling */
+#index-body, #portfolio-body, #about-body, #resume-body, #widget-body {
+    background-color: #272932 !important;
+}
+
 #index-body {
-    background-image: url('/background.png');
+    background-image: url('images/background.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-#portfolio-body, #about-body, #resume-body, #widget-body {
-    background-color: #272932 !important;
-}
+/* ---------------------- */
+/* --- Navbar Styling --- */
+/* ---------------------- */
 
-
-
-/*Navbar Styling*/
 .navbar {
     height: 110px;
 }
@@ -46,38 +54,25 @@
     color: #d17a22 !important;
 }
 
-/*Header Styling*/
+/* ----------------------- */
+/* --- Headers Styling --- */
+/* ----------------------- */
 
-#row1 {
+#row1, #about-row1, #portfolio-row1 {
     padding-top: 80px;
     padding-left: 14px;
 }
 
-#about-row1 {
-    padding-top: 80px;
-    padding-left: 14px;
-}
-
-#portfolio-row1 {
-    padding-top: 80px;
-    padding-left: 14px;
+#main-heading, #about-heading, #portfolio-heading {
+    font-family: "Roboto", sans-serif;
+    color: #e7ecef;
 }
 
 #main-heading {
-    font-family: "Roboto", sans-serif;
-    color: #e7ecef;
     font-size: 350%;
 }
 
-#about-heading {
-    font-family: "Roboto", sans-serif;
-    color: #e7ecef;
-    font-size: 300%;
-}
-
-#portfolio-heading {
-    font-family: "Roboto", sans-serif;
-    color: #e7ecef;
+#about-heading, #portfolio-heading {
     font-size: 300%;
 }
 
@@ -89,37 +84,51 @@
     font-style: italic;
 }
 
-/*Sub-heading styling*/
-#sub-heading {
+/* -------------------- */
+/* --- Subheadings --- */
+/* -------------------- */
+
+#sub-heading, #about-subheading, #portfolio-subheading {
     color: #e7ecef;
-    padding-left: 106px;
     font-size: 180%;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-/*Styling the paragraph*/
-.home-paragraph {
+#sub-heading {
+    padding-left: 106px;
+}
+
+/* ------------------- */
+/* --- Paragraphs --- */
+/* ------------------- */
+
+.home-paragraph, .about-paragraph {
     font-size: medium;
     color: #e7ecef;
-    padding-left: 106px;
     margin-bottom: 0.3em;
+}
 
+.home-paragraph {
+    padding-left: 106px;
 }
 
 .about-paragraph {
-    font-size: medium;
-    color: #e7ecef;
     padding-left: 100px;
     padding-right: 100px;
     margin-top: 20px;
-    margin-bottom: 0.3em;
 }
 
-/*Styling the portfolio button*/
+/* ----------------------- */
+/* --- Buttons Styling --- */
+/* ----------------------- */
+
+.btn.home, .btn.about {
+    margin-top: 20px;
+}
+
 .btn.home {
     margin-left: 104px;
-    margin-top: 20px;
 }
 
 .btn.about {
@@ -137,91 +146,215 @@
     border-color: #e7ecef;
 }
 
-/*Images styling*/
+/* -------------------- */
+/* --- Images Grid --- */
+/* -------------------- */
+
 .portfolio-images-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     gap: 150px;
 }
 
-
-
-.rental-pic > * {
+.rental-pic, .delivery-pic, .interior-pic, .todo-pic, .weather-pic, .countdown-pic {
     border-radius: 5px;
 }
-.rental-pic > *:hover{
-    border-radius: 5px;
-    opacity: 0.4;
-    cursor: pointer;
-}
-.delivery-pic > * {
-    border-radius: 5px;
-}
-.delivery-pic > *:hover{
+    
+.rental-pic:hover, .delivery-pic:hover, .interior-pic:hover, .todo-pic:hover, .weather-pic:hover, .countdown-pic:hover {
     border-radius: 5px;
     opacity: 0.4;
     cursor: pointer;
 }
-.interior-pic > * {
-    border-radius: 5px;
+    
+/* ------------------- /
+/ --- Resume Table --- /
+/ ------------------- */
+    
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    border-collapse: collapse;
+    font-size: 1.1em;
+    background-color: #e7ecef;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
 }
-.interior-pic > *:hover {
-    border-radius: 5px;
-    opacity: 0.4;
+    
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e7ecef;
+}
+    
+th {
+    background-color: #19242e;
+    color: #e7ecef;
+}
+    
+tr:hover {
+    background-color: #f2f2f2;
+}
+    
+.contact-container {
     cursor: pointer;
 }
-
-.todo-pic > * {
-    border-radius: 5px;
+    
+    /* ------------------------ /
+    / --- Radio Form Styling --- /
+    / ------------------------ */
+    
+.radio-form {
+    margin-left: 135px;
+    margin-bottom: 30px;
 }
-.todo-pic > *:hover{
+    
+.form-labels {
+    color: #d17a22;
+    font-size: large;
+    padding-right: 10px;
+}
+    
+.submit-button {
+    margin-left: 10px;
+    border:#e7ecef solid 2px;
     border-radius: 5px;
-    opacity: 0.4;
+    background-color: #272932;
+    color: #d17a22;
     cursor: pointer;
+    width:100px;
+    height: 50px;
 }
-.weather-pic > * {
+    
+.submit-button:hover {
+    margin-left: 10px;
+    border:#d17a22 solid 2px;
     border-radius: 5px;
-}
-.weather-pic > *:hover{
-    border-radius: 5px;
-    opacity: 0.4;
+    background-color: #e7ecef;
+    color: #272932;
     cursor: pointer;
+    font-weight: 600;
 }
-.countdown-pic > * {
+    
+    /* ----------------------- /
+    / --- Testimonial Styling --- /
+    / ----------------------- */
+    
+.testimonial {
+    margin-right: 135px;
+    margin-left: 135px;
+}
+    
+#testimonial-header, #testimonial-author {
+    color:#e7ecef;
+    background-color: #d17a22;
     border-radius: 5px;
+    padding-right: 5px;
+    font-size: large;
+    text-align: right;
 }
-.countdown-pic > *:hover {
-    border-radius: 5px;
-    opacity: 0.4;
-    cursor: pointer;
+    
+#testimonial-header, #testimonial-quote {
+    text-align: right;
 }
-
-
+    
+    #testimonial-quote {
+    color:#e7ecef;
+    padding-top: 2px;
+}
+    
+/* ------------------------ /
+/ --- Media Query Styling --- /
+/ ------------------------ */
+    
 @media (max-width: 992px) {
-    .navbar {
-        min-height: 110px; 
-    }
-
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-        margin-top: 1px;
-    }
-
-    .navbar-brand img {
-        height: 100px;
-        width: 100px;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 0.9rem;
-    }
-
-    #index-body {
-        background-color: #272932;
-    }
+.navbar {
+    min-height: 110px;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+}
 
+.navbar-brand img {
+    height: 100px;
+    width: 100px;
+}
 
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+}
+
+#index-body {
+    background-color: #272932;
+}
+}
+
+/* ----------------------- /
+/ --- Counter App Styling --- /
+/ ----------------------- */
+
+/* ----------------------- /
+/ --- Counter App Styling --- /
+/ ----------------------- */
+
+.counter-container {
+    border-radius: 10px;
+}
+    
+* {
+    box-sizing: border-box;
+}
+
+.counter-div {
+    max-width: 250px;
+    height: 250px;
+    background-image: url('images/count-app.png');
+    background-size: cover;
+    color: #e7ecef;
+    font-size: 500%;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* ---------------------- /
+/ --- Button Styling --- /
+/ ---------------------- */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+    
+.buttons button {
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #272932;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+.buttons button:hover {
+    background-color: #272932;
+    color: #d17a22;
+}
+    
+button.subtract, button.reset, button.add {
+    background-color: #e7ecef;
+    border: solid #d17a22;
+}
+    
+/* End of CSS File */
